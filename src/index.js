@@ -17,16 +17,7 @@ function init(){
     KeretSzin.addEventListener('input', changeBorder);
     mode.addEventListener('click', toggleMode);
 }
-function changeImg(){
-    Kepid.src = url.value; 
-}
-function changeWidth(){
-    Kepid.width = width.value;
-}
-function changeBorder(){
-    Kepid.style.border = Keretvastagsag.value + "px solid " + KeretSzin.value;
-}
-let i = 0;
+let i=0;
 function toggleMode(){
     
     if(i == 0){
@@ -39,5 +30,15 @@ function toggleMode(){
         mode.innerHTML = "Világos"; 
     }
 }
+function changeImg(){
+    Kepid.src = url.value; 
+}
+function changeWidth(){
+    Kepid.width = width.value;
+}
+function changeBorder(){
+    Kepid.style.border = Keretvastagsag.value + "px solid " + KeretSzin.value;
+}
+
 document.addEventListener('DOMContentLoaded' , init);
 
