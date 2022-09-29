@@ -39,6 +39,5 @@ function changeWidth(){
 function changeBorder(){
     Kepid.style.border = Keretvastagsag.value + "px solid " + KeretSzin.value;
 }
-
 document.addEventListener('DOMContentLoaded' , init);
 
